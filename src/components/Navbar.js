@@ -1,14 +1,20 @@
 import React from "react";
- import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Navbar(props) {
   return (
     <>
-
-      <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
-
+      <nav
+        className={`navbar fixed-top navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
+      >
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            <img src="" alt="" width="30" height="24" className="d-inline-block align-text-top" />
+            <img
+              src="logo.png"
+              alt=""
+              width={90}
+              height={28}
+              className="d-inline-block me-4 align-text-top"
+            />
             Helicase
           </a>
 
@@ -48,54 +54,56 @@ export default function Navbar(props) {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to="Biotechnology">
                       Biotechnology
-                    </a>
-                    <a className="dropdown-item" href="/">
-                      Microbiology
-                    </a>
-
-                    <a className="dropdown-item" href="/">
-                      Virology
-                    </a>
-                    <a className="dropdown-item" href="/">
+                    </Link>
+                    <Link className="dropdown-item" to="Immunology">
                       Immunology
-                    </a>
+                    </Link>
+                    <Link className="dropdown-item" to="Microbiology">
+                      Microbiology
+                    </Link>
+
+                    <Link className="dropdown-item" to="Virology">
+                      Virology
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to="Bioinformatics">
                       Bioinformatics
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
+                    <Link className="dropdown-item" to="Contact">
+                      Contact Us For More
+                    </Link>
                   </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Contact us for more
-                    </a>
-                  </li>
+                  <li></li>
                 </ul>
               </li>
-
             </ul>
 
-            { <div className={`form-check form-switch text-${props.mode==='light' ? 'dark':'light'} mx-3`}>
-              <input className="form-check-input" onClick={props.toggleMode} type="checkbox" id="flexSwitchCheckChecked"  />
-              <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Dark mode</label>
-            </div>}
-
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-info" type="submit">
-                Search
-              </button>
-            </form>
+            {
+              <div
+                className={`form-check form-switch text-${
+                  props.mode === "light" ? "dark" : "light"
+                } mx-3`}
+              >
+                <input
+                  className="form-check-input"
+                  onClick={props.toggleMode}
+                  type="checkbox"
+                  id="flexSwitchCheckChecked"
+                />
+                <label
+                  className="form-check-label"
+                  htmlFor="flexSwitchCheckChecked"
+                >
+                  Dark mode
+                </label>
+              </div>
+            }
           </div>
         </div>
       </nav>
