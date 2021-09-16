@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import TextForm from "./components/TextForm";
 import Biotechnology from "./components/Biotechnology";
 import About from "./components/About";
@@ -12,10 +12,13 @@ import Alert from "./components/Alert";
 import Immunology from "./components/Immunology";
 import "./components/style.css";
 
+
 function App() {
   const [mode, setmode] = useState("light");
-  
-
+  useEffect(() => {
+    document.body.style.backgroundColor = "#B9DFE3";
+  }, [])
+    
   const toggleMode = () => {
     
     if (mode === "light") {

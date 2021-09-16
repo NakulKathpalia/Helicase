@@ -1,32 +1,27 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 
 export default function Immunology(props) {
-  // useEffect(() => {
-  //   if (props.mode === "dark") {
-  //     setcurrentColor("#f3f31f");
-  //   } else {
-  //     setcurrentColor("#189e2a");
-  //   }
-  // }, [props.mode]);
-  // const [currentColor, setcurrentColor] = useState("blue");
-  // const [Clr, setClr] = useState("blue");
-  // useEffect(() => {
-  //   if (props.mode === "dark") {
-  //     setClr("#A370F7");
-  //   } else {
-  //     setClr("#084298");
-  //   }
-  // }, [props.mode]);
+  const [IsScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    setIsScrolling(false);
+  }, [IsScrolling]);
 
   return (
-    <div className={` text-${props.mode === "light" ? "dark" : "light"}`}>
-      <div className="text-center immuno ">Immunologyy</div>
+    <div
+      className={` text-${props.mode === "light" ? "dark" : "light"} customScroll
+      `}
+    >
       <div className="container" style={{ display: "flex" }}>
+        
         <div
           className={`content-box text-${props.mode} bg-${
             props.mode === "light" ? "success" : "warning"
           }`}
+          onScroll={()=>{
+            setIsScrolling(true);
+          }}
         >
           <ol>
             <h4>
@@ -58,7 +53,6 @@ export default function Immunology(props) {
                   </li>
                   <li>
                     <a className={` text-${props.mode} `} href="#pbr">
-                      
                       Physiological barriers
                     </a>
                   </li>
@@ -81,11 +75,320 @@ export default function Immunology(props) {
                   </a>
                 </b>
               </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
+              <li>
+                <b>
+                  <a href="#aai" className={` text-${props.mode} `}>
+                    Acquired or adaptive immunity
+                  </a>
+                </b>
+              </li>
             </h4>
           </ul>
         </div>
 
         <div className="content">
+          <div className="text-center immuno ">Immunologyy</div>
           <h3
             id="Defination"
             className={`text-center text-${

@@ -7,7 +7,7 @@ export default function Navbar(props) {
         className={`navbar fixed-top navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <img
               src="logo.png"
               alt=""
@@ -16,7 +16,7 @@ export default function Navbar(props) {
               className="d-inline-block me-4 align-text-top"
             />
             Helicase
-          </a>
+          </Link>
 
           <button
             className="navbar-toggler"
