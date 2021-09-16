@@ -17,12 +17,13 @@ function App() {
 
 
   const toggleMode = () => {
+    
     if (mode === "light") {
       setmode("dark");
-      document.body.style.backgroundColor = "rgb(53, 53, 53)";
+      document.body.style.backgroundColor = "#00203F";
     } else {
       setmode("light");
-      document.body.style.backgroundColor = "#fff";
+      document.body.style.backgroundColor = "#B9DFE3";
     }
   };
   return (
