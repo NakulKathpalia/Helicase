@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
+
 
 export default function TextForm(props) {
   return (
@@ -43,9 +45,9 @@ export default function TextForm(props) {
             level exams.
           </p>
           <button className={`mb-3 my-5 btn btn-light`}>
-            <a href="/About" className="text-decoration-none">
+            <Link to="/About" className="text-decoration-none">
               <b className={`text-dark `}>Read More About Helicae</b>
-            </a>
+            </Link>
           </button>
         </div>
       </div>
@@ -72,14 +74,14 @@ export default function TextForm(props) {
                   longer.
                 </p>
                 <button className={`btn btn-${props.mode} `}>
-                  <a
+                  <Link
                     className={`text-decoration-none text-${
                       props.mode === "light" ? "dark" : "light"
                     }`}
-                    href="/Biotechnology"
+                    to="/Biotechnology"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -104,14 +106,14 @@ export default function TextForm(props) {
                   longer.
                 </p>
                 <button className={`btn btn-${props.mode} `}>
-                  <a
+                  <Link
                     className={`text-decoration-none text-${
                       props.mode === "light" ? "dark" : "light"
                     }`}
-                    href="/Immunology"
+                    to="/Immunology"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -137,14 +139,14 @@ export default function TextForm(props) {
                   lead-in to additional content.
                 </p>
                 <button className={`btn btn-${props.mode} `}>
-                  <a
+                  <Link
                     className={`text-decoration-none text-${
                       props.mode === "light" ? "dark" : "light"
                     }`}
-                    href="/Biotechnology"
+                    to="/Biotechnology"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -169,14 +171,14 @@ export default function TextForm(props) {
                   longer.
                 </p>
                 <button className={`btn btn-${props.mode} `}>
-                  <a
+                  <Link
                     className={`text-decoration-none text-${
                       props.mode === "light" ? "dark" : "light"
                     }`}
-                    href="/Biotechnology"
+                    to="/Biotechnology"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -203,14 +205,14 @@ export default function TextForm(props) {
                   longer.
                 </p>
                 <button className={`btn btn-${props.mode} `}>
-                  <a
+                  <Link
                     className={`text-decoration-none text-${
                       props.mode === "light" ? "dark" : "light"
                     }`}
-                    href="/Biotechnology"
+                    to="/Biotechnology"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </button>
               </div>
             </div>
