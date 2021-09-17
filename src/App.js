@@ -11,13 +11,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Alert from "./components/Alert";
 import Immunology from "./components/Immunology";
 import "./components/style.css";
-import Sidebar from "./components/Sidebar";
 
 
 function App() {
   const [mode, setmode] = useState("light");
   useEffect(() => {
-    document.body.style.backgroundColor = "#B9DFE3";
+    document.body.style.backgroundColor = "#f0ffff";
   }, [])
     
   const toggleMode = () => {
@@ -27,7 +26,7 @@ function App() {
       document.body.style.backgroundColor = "#00203F";
     } else {
       setmode("light");
-      document.body.style.backgroundColor = "#B9DFE3";
+      document.body.style.backgroundColor = "#f0ffff";
     }
   };
   return (

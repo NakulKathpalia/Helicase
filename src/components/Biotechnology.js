@@ -14,7 +14,7 @@ export default function Biotechnology(props) {
   return (
     <div className={` text-${props.mode === "light" ? "dark" : "light"}`}>
       <div className=" container">
-        <h1 className="text-center biotech">Biotechnology</h1>
+        <h1 className="text-center heading">Biotechnology</h1>
         <div className="content">
           <h3
             className={`text-center text-${
