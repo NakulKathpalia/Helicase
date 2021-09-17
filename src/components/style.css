@@ -89,7 +89,7 @@
   border-radius: 5px;
   padding: 1px;
 }
-.immuno {
+.heading {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 72px;
   padding-top: 3%;
@@ -171,7 +171,52 @@ h3 {
   border-radius: 21px;
   padding: 4px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
+
+  .mainbox {
+    flex-direction: column;
+    margin: 4px;
+  }
+
+  .paras {
+    margin: 5px;
+    border-radius: 40px;
+  }
+
+  .firstsection {
+    margin: 5%;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    padding: 15%;
+  }
+  .abt {
+    font-size: 17px;
+  }
+
+  .content {
+    margin: 2% 9%;
+  }
+  .content-box {
+    display: flex;
+    /* padding: 0 15px; */
+    justify-content: center;
+    position: unset;
+    width: auto;
+    min-width: none;
+    margin-top: 6%; 
+    height: 60vh;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .heading {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 64px;
+    padding-top: 3%;
+  }
+}
+@media only screen and (max-width: 768px ) {
   .mainbox {
     flex-direction: column;
     margin: 4px;
@@ -209,7 +254,7 @@ h3 {
   .container {
     flex-direction: column;
   }
-  .immuno {
+  .heading {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 64px;
     padding-top: 3%;
@@ -228,7 +273,7 @@ h3 {
     height: 40vh;
     margin: 20% 5% 0 5% ;
   }
-  .immuno {
+  .heading {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 40px;
     padding-top: 3%;
@@ -247,7 +292,7 @@ h3 {
     height: 40vh;
     margin: 20% 5% 0 5% ;
   }
-  .immuno {
+  .heading {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 40px;
     padding-top: 3%;

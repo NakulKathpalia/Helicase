@@ -238,7 +238,7 @@ export default function Immunology(props) {
         </div>
 
         <div className="content">
-          <div className="text-center immuno ">Immunologyy</div>
+          <div className="text-center heading ">Immunologyy</div>
           <h3
             id="Defination"
             className={`text-center text-${
