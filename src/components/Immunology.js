@@ -87,7 +87,6 @@ export default function Immunology(props) {
             props.mode === "light" ? "success" : "$blue"
           }`}
             
-            Style="width: 280px;"
           >
             <div class=" align-items-center pb-2 mb-1 link-dark text-decoration-none border-bottom">
               {/* <svg class="bi me-2" width="30" height="24">
