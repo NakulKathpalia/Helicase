@@ -10,12 +10,13 @@ export default function Immunology(props) {
 
   return (
     <div
-      className={` text-${props.mode === "light" ? "dark" : "light"} customScroll
+      className={` text-${
+        props.mode === "light" ? "dark" : "light"
+      } customScroll
       `}
     >
       <div className="container" style={{ display: "flex" }}>
-        
-        <div
+        {/* <div
           className={`content-box text-${props.mode} bg-${
             props.mode === "light" ? "success" : "warning"
           }`}
@@ -75,316 +76,166 @@ export default function Immunology(props) {
                   </a>
                 </b>
               </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="#aai" className={` text-${props.mode} `}>
-                    Acquired or adaptive immunity
-                  </a>
-                </b>
-              </li>
+             
+              
             </h4>
           </ul>
+        </div> */}
+
+        <div>
+          <div className={`content-box justify-content-start  p-3 text-${props.mode} bg-${
+            props.mode === "light" ? "success" : "$blue"
+          }`}
+            
+            Style="width: 280px;"
+          >
+            <div class=" align-items-center pb-2 mb-1 link-dark text-decoration-none border-bottom">
+              {/* <svg class="bi me-2" width="30" height="24">
+            <use xlinkhref="#bootstrap" />
+          </svg> */}
+              <div class="fs-5 text-center fw-semibold">Contents</div>
+            </div>
+            <ul class="list-unstyled ps-0">
+              <li>
+                <a href="#Defination" class="link-dark rounded">
+                  Defination
+                </a>
+                <li><a class="link-dark rounded" href="#immunity">Immunity</a></li>
+              </li>
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#home-collapse"
+                  aria-expanded="true"
+                >
+                  Home
+                </button>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Overview
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Updates
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Reports
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#dashboard-collapse"
+                  aria-expanded="false"
+                >
+                  Dashboard
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Overview
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Weekly
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Monthly
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Annually
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#orders-collapse"
+                  aria-expanded="false"
+                >
+                  Orders
+                </button>
+                <div class="collapse" id="orders-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        New
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Processed
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Shipped
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Returned
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-top my-3"></li>
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#account-collapse"
+                  aria-expanded="false"
+                >
+                  Account
+                </button>
+                <div class="collapse" id="account-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        New...
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Settings
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-dark rounded">
+                        Sign out
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="content">

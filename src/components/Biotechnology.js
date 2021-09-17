@@ -16,9 +16,13 @@ export default function Biotechnology(props) {
       <div className=" container">
         <h1 className="text-center biotech">Biotechnology</h1>
         <div className="content">
-          <h3  className={`text-center text-${
+          <h3
+            className={`text-center text-${
               props.mode === "light" ? "success" : "warning"
-            }`}>Defination : </h3>
+            }`}
+          >
+            Defination :
+          </h3>
           <p className="">
             The concept of biotechnology encompasses a wide range of procedures
             for modifying living organisms according to human purposes, going
@@ -27,9 +31,12 @@ export default function Biotechnology(props) {
             artificial selection and hybridization. Modern usage also includes
             genetic engineering as well as cell and tissue culture technologies.
           </p>
-          <h3  className={`text-center text-${
+          <h3
+            className={`text-center text-${
               props.mode === "light" ? "success" : "warning"
-            }`} className="text-center">
+            }`}
+            className="text-center"
+          >
             Introduction to biotechnology
           </h3>
           <h4>Topics covered:-</h4>
@@ -37,7 +44,7 @@ export default function Biotechnology(props) {
             <a href="#hni"> History and introduction</a>
           </li>
           <li>
-            <a href="#">Traditional and modern biotechnology</a>{" "}
+            <a href="#">Traditional and modern biotechnology</a>
           </li>
 
           <li className="dropend">
@@ -103,13 +110,15 @@ export default function Biotechnology(props) {
             <a href="#"> Overview of biotechnology institutions in India</a>
           </li>
           <li>
-            {" "}
             <a href="#"> Applications of biotechnology</a>
           </li>
 
-          <h3  className={`text-center text-${
+          <h3
+            className={`text-center text-${
               props.mode === "light" ? "success" : "warning"
-            }`} id="hni">
+            }`}
+            id="hni"
+          >
             History and Introduction
           </h3>
           <h4>History</h4>
@@ -138,9 +147,12 @@ export default function Biotechnology(props) {
             </ol>
           </div>
           <div className="intro">
-            <h3  className={`text-center text-${
-              props.mode === "light" ? "success" : "warning"
-            }`} className="text-center">
+            <h3
+              className={`text-center text-${
+                props.mode === "light" ? "success" : "warning"
+              }`}
+              className="text-center"
+            >
               Introduction:-
             </h3>
             <p>
@@ -162,9 +174,9 @@ export default function Biotechnology(props) {
               <a href="#bluebt">Blue biotechnology</a>
             </li>
             <h3
-               className={`text-center text-${
-              props.mode === "light" ? "success" : "warning"
-            }`}
+              className={`text-center text-${
+                props.mode === "light" ? "success" : "warning"
+              }`}
               className="text-center fw-bold"
               id="greenbt"
             >
@@ -202,9 +214,9 @@ export default function Biotechnology(props) {
               </li>
             </p>
             <h3
-               className={`text-center text-${
-              props.mode === "light" ? "success" : "warning"
-            }`}
+              className={`text-center text-${
+                props.mode === "light" ? "success" : "warning"
+              }`}
               className="text-center fw-bold"
               id="redbt"
             >
@@ -232,9 +244,9 @@ export default function Biotechnology(props) {
               </li>
             </p>
             <h3
-               className={`text-center text-${
-              props.mode === "light" ? "success" : "warning"
-            }`}
+              className={`text-center text-${
+                props.mode === "light" ? "success" : "warning"
+              }`}
               className="text-center fw-bold"
               id="whitebt"
             >
@@ -263,9 +275,9 @@ export default function Biotechnology(props) {
               </li>
             </p>
             <h3
-               className={`text-center text-${
-              props.mode === "light" ? "success" : "warning"
-            }`}
+              className={`text-center text-${
+                props.mode === "light" ? "success" : "warning"
+              }`}
               className="text-center fw-bold"
               id="bluebt"
             >
@@ -297,9 +309,155 @@ export default function Biotechnology(props) {
               </li>
               <li>
                 Fresh-water river aquatic resources utilization also comes under
-                this category.{" "}
+                this category.
               </li>
             </p>
+            <h3 className=" py-2">
+              <u>Traditional and Modern Biotechnology</u>
+            </h3>
+            <br />
+            <br />
+            <h3 className="text-center fw-bold"> Traditional Biotechnology</h3>
+            <ol>
+              <li>
+                It refers to the traditional techniques of using living
+                organisms to yield new products for human use.
+              </li>
+              <li>
+                It included examples of biotechnology like breeding animals and
+                crops to make cheese/yoghurt, beer, bread, and wine.
+              </li>
+              <li>
+                Some traditional techniques such as selective breeding,
+                hybridisation and mutagenesis are used in the current
+                application of biotechnology.
+              </li>
+              <li>
+                Other technologies can be fermentation, selective breeding, food
+                processing, tissue culture and more.
+              </li>
+              <li>
+                The diversity of microorganisms and the development of genetics
+                expanded the potential of traditional biotechnology and
+                ultimately led to the development of modern biotechnology.
+              </li>
+              <li>
+                Microorganisms were first used to produce some organic compounds
+                like citric acid. They were also used to produce antibodies.
+              </li>
+              <li>
+                The levels of production of penicillin yield have been informed
+                but the types of products are not changed. they remain the same
+                as those obtained from the natural strains/ cell lines.
+              </li>
+              <li>
+                In all the above processes, only the natural capabilities of the
+                organisms and cells are exploited.
+              </li>
+            </ol>
+            <h3 className="text-center fw-bold"> Modern Biotechnology</h3>
+            <ol>
+              <li>
+                It involves the use of genetic engineering techniques, such as:-
+                <br />
+                <br />
+                <p>➢ Recombinant DNA</p>
+                <p>➢ Functional and structural genomics</p>
+                <p>➢ DNA diagnostic probes</p>
+              </li>
+              <li>
+                The development of recombinant DNA technology has marked the
+                beginning of modern biotechnology.
+              </li>
+              <li>
+                Modern biotechnology techniques are currently being used in many
+                areas such as food agriculture, forestry, healthcare,
+                environment, minerals of industrial processes to develop new
+                products and processes.
+              </li>
+              <li>
+                Biotechnology diagnostics have been used to detect a wide
+                variety of diseases and genetic conditions.
+              </li>
+              <li> It developed during the 1970s.</li>
+              <li>
+                Human insulin is also produced from transgenic E. coli strain
+                that contains and express the insulin gene.
+              </li>
+              <li>
+                The protein produced by transgenes is called recombinant
+                protein.
+              </li>
+              <li>
+                Modern biotechnology is applied in medicine and healthcare in
+                therapeutics, mainly for the discovery, development, and
+                production of novel drugs, and in diagnostics for protein and
+                nucleic acid-based tests.
+              </li>
+            </ol>
+            <div className="py-3 table-responsive">
+              <table className={`table table-${props.mode}`}>
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Traditional Biotechnology</th>
+                    <th scope="col">Modern Biotechnology</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      It refers to the traditional techniques of using living
+                      organisms to yield new products or modify foods or other
+                      useful products for human use.
+                    </td>
+                    <td>
+                      The diversity of microorganisms and the development of
+                      genetics expanded the potential of traditional
+                      biotechnology and ultimately led to the development of
+                      modern biotechnology.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>
+                      Examples of early biotechnology include recombinant DNA
+                      techniques, tissue culture, and mutagenesis.
+                    </td>
+                    <td>
+                      Examples of modern biotechnology include DNA profiling,
+                      genome analysis, transgenesis, DNA cloning, tissue
+                      engineering, etc.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>
+                      Breeding animals and crops to make cheese, yoghurt, bread,
+                      beer, and wine. Microorganisms are used to produce enzymes
+                      for use in laundry detergents.
+                    </td>
+                    <td>
+                      Modern biotechnology techniques are used in many areas
+                      such as food, agriculture, forestry, healthcare,
+                      environment, minerals, and industrial processes.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>
+                      It involves the use of natural organisms to create or
+                      modify food or other useful products for human use.
+                    </td>
+                    <td>
+                      It involves the manipulation of genes and living tissues
+                      in a controlled environment.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

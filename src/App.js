@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Alert from "./components/Alert";
 import Immunology from "./components/Immunology";
 import "./components/style.css";
+import Sidebar from "./components/Sidebar";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
     <>
       <Router>
         <Navbar mode={mode} toggleMode={toggleMode} />
+        {/* <Sidebar/> */}
         <div className="mart">
           <Switch>
             <Route path="/About">
