@@ -23,7 +23,7 @@ function App() {
     
     if (mode === "light") {
       setmode("dark");
-      document.body.style.backgroundColor = "#00203F";
+      document.body.style.backgroundColor = "#0A0B1D";
     } else {
       setmode("light");
       document.body.style.backgroundColor = "#f0ffff";

@@ -2,19 +2,16 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-
 export default function TextForm(props) {
   return (
     <div>
       <br />
       <br />
       <div className={`text-${props.mode === "light" ? "dark" : "light"}`}>
-        <section
-          className={`firstsection bg-${
-            props.mode === "light" ? "dark" : "light"
-          }`}
+        <div
+          className={`firstsection `}
         >
-          <div className="frontpanel text-center">
+          {/* <div className="frontpanel text-center">
             <h6
               className={`mainheading pt-5 text-uppercase fw-bold display-1 text-${props.mode}`}
               style={{
@@ -26,8 +23,8 @@ export default function TextForm(props) {
             <h5 className={`blockquote-footer text-${props.mode}`}>
               "Unwind your Searches ,Binds your studies"
             </h5>
-          </div>
-        </section>
+          </div> */}
+        </div>
 
         <div
           className="text-center mx-4 paras "
@@ -69,9 +66,10 @@ export default function TextForm(props) {
                   Biotechnology
                 </h5>
                 <p className={`card-text  text-${props.mode}`}>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Biotechnology is technology that utilizes biological systems,
+                  living organisms or parts of this to develop or create
+                  different products. Brewing and baking bread are examples of
+                  processes that fall within the concept of biotechnology
                 </p>
                 <button className={`btn btn-${props.mode} `}>
                   <Link
@@ -100,10 +98,12 @@ export default function TextForm(props) {
               <div className="card-body">
                 <h5 className={`card-title text-${props.mode}`}>Immunology</h5>
                 <p className={`card-text  text-${props.mode}`}>
-                  {" "}
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Immunology is the study of the immune system and is a very
+                  important branch of the medical and biological sciences. The
+                  immune system protects us from infection through various lines
+                  of defence. If the immune system is not functioning as it
+                  should, it can result in disease, such as autoimmunity,
+                  allergy and cancer.
                 </p>
                 <button className={`btn btn-${props.mode} `}>
                   <Link
@@ -134,9 +134,10 @@ export default function TextForm(props) {
                   Microbiology
                 </h5>
                 <p className={`card-text  text-${props.mode}`}>
-                  {" "}
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
+                  Microbiology is the study of all living organisms that are too
+                  small to be visible with the naked eye. This includes
+                  bacteria, archaea, viruses, fungi, prions, protozoa and algae,
+                  collectively known as 'microbes'.
                 </p>
                 <button className={`btn btn-${props.mode} `}>
                   <Link
@@ -165,10 +166,10 @@ export default function TextForm(props) {
               <div className="card-body">
                 <h5 className={`card-title text-${props.mode}`}>Virology</h5>
                 <p className={`card-text  text-${props.mode}`}>
-                  {" "}
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Virology is the scientific discipline concerned with the study
+                  of the biology of viruses and viral diseases, including the
+                  distribution, biochemistry, physiology, molecular biology,
+                  ecology, evolution and clinical aspects of viruses.
                 </p>
                 <button className={`btn btn-${props.mode} `}>
                   <Link
@@ -199,17 +200,17 @@ export default function TextForm(props) {
                   Bioinformatics
                 </h5>
                 <p className={`card-text  text-${props.mode}`}>
-                  {" "}
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Bioinformatics involves the analysis of biological information
+                  using computers and statistical techniques, the science of
+                  developing and utilizing computer databases and algorithms to
+                  accelerate and enhance biological research
                 </p>
                 <button className={`btn btn-${props.mode} `}>
                   <Link
                     className={`text-decoration-none text-${
                       props.mode === "light" ? "dark" : "light"
                     }`}
-                    to="/Biotechnology"
+                    to="/Bioinformatics"
                   >
                     Learn More
                   </Link>

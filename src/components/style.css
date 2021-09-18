@@ -1,5 +1,5 @@
 ::-webkit-scrollbar-thumb{
-  background-color: white;
+  background-color: rgb(80, 77, 77);
   border-radius: 50px;
 }
 ::-webkit-scrollbar{
@@ -8,14 +8,16 @@
 .customScroll ::-webkit-scrollbar{
   width: 5px;
 }
-
-.firstsection {
-  margin: 5% 2%;
-  border-radius: 55px;
-  background-size: cover;
-  background-position: center;
-  padding: 15%;
+.bg-fadedgreen{
+  background-color: #bbedc9;
 }
+.bg-darkblue{
+  background-color: #08253d;
+}
+.bg-fadedblue{
+  background-color: #8cd7ed;
+}
+
 .abt {
   padding-right: 10%;
   padding-left: 10%;
@@ -37,16 +39,29 @@
 
 .bioimg {
   width: 300px;
-
+  
   margin-top: 20%;
   border: black solid;
   border-radius: 26px;
 }
+.firstsection {
+  margin: 3% 2%;
+  border-radius: 15px;
+  background-image: url(./img/banner_helicase_02.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 15%;
+  height: 100vh;
+}
 .paras {
   margin: 2%;
   padding: 12% 0;
-  border-radius: 55px;
-  background-color: #217f92;
+  border-radius: 15px;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)) ,url(./img/texture_paras.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 .container {
   margin: 2% 0;

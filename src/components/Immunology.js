@@ -20,9 +20,9 @@ export default function Immunology(props) {
           <div
             className={`content-box justify-content-start  p-3 text-${
               props.mode
-            } bg-${props.mode === "light" ? "white" : "white"}`}
+            } bg-${props.mode === "light" ? "fadedgreen" : "fadedblue"}`}
           >
-            <div className=" align-items-center pb-2 mb-1 link-dark text-decoration-none border-bottom">
+            <div className=" align-items-center pb-2 mb-1 link-dark text-decoration-none border-bottom border-dark">
               <div className="fs-4 text-center fw-semibold">Contents</div>
             </div>
             <ul className="list-unstyled ps-0">
@@ -391,7 +391,7 @@ export default function Immunology(props) {
         </div>
 
         <div className="content">
-          <div className="text-center heading ">Immunologyy</div>
+          <div className="text-center heading ">Immunology</div>
           <h3
             id="Defination"
             className={`text-center text-${
