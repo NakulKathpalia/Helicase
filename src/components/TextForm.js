@@ -9,7 +9,7 @@ export default function TextForm(props) {
       <br />
       <div className={`text-${props.mode === "light" ? "dark" : "light"}`}>
         <div
-          className={`firstsection `}
+          className={`firstsection my-5 bg-${props.mode === "light" ? "d" : "l"}`}
         >
           {/* <div className="frontpanel text-center">
             <h6
@@ -27,7 +27,7 @@ export default function TextForm(props) {
         </div>
 
         <div
-          className="text-center mx-4 paras "
+          className="text-center mx-4 my-5 paras "
           style={{
             fontFamily: "Arial, Helvetica, sans-serif",
           }}
@@ -50,7 +50,7 @@ export default function TextForm(props) {
       </div>
       <div className="mx-5 my-5 ">
         <div className="row row-cols-1 row-cols-md-3 g-4">
-          <div className="col rounded-3">
+          <div className="col ">
             <div
               className={`card crdbdr bg-${
                 props.mode === "light" ? "success" : "light"
@@ -144,7 +144,7 @@ export default function TextForm(props) {
                     className={`text-decoration-none text-${
                       props.mode === "light" ? "dark" : "light"
                     }`}
-                    to="/Biotechnology"
+                    to="/Microbiology"
                   >
                     Learn More
                   </Link>
@@ -176,7 +176,7 @@ export default function TextForm(props) {
                     className={`text-decoration-none text-${
                       props.mode === "light" ? "dark" : "light"
                     }`}
-                    to="/Biotechnology"
+                    to="/Virology"
                   >
                     Learn More
                   </Link>

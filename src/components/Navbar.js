@@ -4,7 +4,7 @@ export default function Navbar(props) {
   return (
     <>
       <nav
-        className={`navbar fixed-top navbar-expand-lg navbar-${props.mode} bg-${
+        className={`navbar fixed-top navbar-expand-lg  navbar-${props.mode  === "light" ? "dark" : "light"} bg-${
           props.mode === "light" ? "fadedgreen" : "darkblue"
         }`}
       >
@@ -89,7 +89,7 @@ export default function Navbar(props) {
             {
               <div
                 className={`form-check form-switch text-${
-                  props.mode === "light" ? "dark" : "light"
+                  props.mode 
                 } mx-3`}
               >
                 <input

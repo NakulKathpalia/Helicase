@@ -1,21 +1,24 @@
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: rgb(80, 77, 77);
   border-radius: 50px;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 5px;
 }
-.customScroll ::-webkit-scrollbar{
+.customScroll ::-webkit-scrollbar {
   width: 5px;
 }
-.bg-fadedgreen{
-  background-color: #bbedc9;
-}
-.bg-darkblue{
+.bg-fadedgreen {
   background-color: #08253d;
 }
-.bg-fadedblue{
+.bg-darkblue {
+  background-color: #d1d6ce;
+}
+.bg-fadedblue {
   background-color: #8cd7ed;
+}
+.bg-lightgreen{
+  background-color: #BBEDC9;
 }
 
 .abt {
@@ -39,35 +42,39 @@
 
 .bioimg {
   width: 300px;
-  
+
   margin-top: 20%;
   border: black solid;
   border-radius: 26px;
 }
 .firstsection {
-  margin: 3% 2%;
+  margin: 2%;
   border-radius: 15px;
-  background-image: url(./img/banner_helicase_02.jpg);
   background-size: cover;
   background-position: center;
-  padding: 15%;
-  height: 100vh;
+  height: 90vh;
+}
+.bg-l {
+  background-image: url(./img/banner_helicase_03.jpg);
+}
+.bg-d {
+  background-image: url(./img/banner_helicase_02.jpg);
 }
 .paras {
   margin: 2%;
   padding: 12% 0;
   border-radius: 15px;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)) ,url(./img/texture_paras.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/texture_paras.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 .container {
   margin: 2% 0;
 }
 
-.content {  
+.content {
   padding: 0 2%;
   margin-left: 25%;
 }
@@ -87,7 +94,6 @@
   scroll-behavior: smooth;
   /* margin: 2%; */
   border-radius: 10px;
-  
 }
 .content-box li a {
   text-decoration: none;
@@ -159,9 +165,8 @@ p {
 }
 .intro p li {
   font-size: 18px;
-
 }
-.intro li{
+.intro li {
   font-size: 18px;
 }
 h3 {
@@ -187,7 +192,6 @@ h3 {
   padding: 4px;
 }
 @media only screen and (max-width: 992px) {
-
   .mainbox {
     flex-direction: column;
     margin: 4px;
@@ -219,7 +223,7 @@ h3 {
     position: unset;
     width: auto;
     min-width: none;
-    margin-top: 6%; 
+    margin-top: 6%;
     height: 60vh;
   }
   .container {
@@ -231,7 +235,7 @@ h3 {
     padding-top: 3%;
   }
 }
-@media only screen and (max-width: 768px ) {
+@media only screen and (max-width: 768px) {
   .mainbox {
     flex-direction: column;
     margin: 4px;
@@ -263,7 +267,7 @@ h3 {
     position: unset;
     width: auto;
     min-width: none;
-    margin-top: 10%; 
+    margin-top: 10%;
     height: 50vh;
   }
   .container {
@@ -276,7 +280,6 @@ h3 {
   }
 }
 @media only screen and (max-width: 375px) {
-
   .content-box {
     display: flex;
     /* padding: 0 15px; */
@@ -284,9 +287,9 @@ h3 {
     position: unset;
     width: auto;
     min-width: none;
-    margin-top: 13%; 
+    margin-top: 13%;
     height: 40vh;
-    margin: 20% 5% 0 5% ;
+    margin: 20% 5% 0 5%;
   }
   .heading {
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -295,7 +298,6 @@ h3 {
   }
 }
 @media only screen and (max-width: 414px) {
-
   .content-box {
     display: flex;
     /* padding: 0 15px; */
@@ -303,9 +305,9 @@ h3 {
     position: unset;
     width: auto;
     min-width: none;
-    margin-top: 13%; 
+    margin-top: 13%;
     height: 40vh;
-    margin: 20% 5% 0 5% ;
+    margin: 20% 5% 0 5%;
   }
   .heading {
     font-family: Georgia, "Times New Roman", Times, serif;

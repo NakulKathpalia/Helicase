@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
+
 
 export default function Immunology(props) {
   const [IsScrolling, setIsScrolling] = useState(false);
@@ -20,31 +22,31 @@ export default function Immunology(props) {
           <div
             className={`content-box justify-content-start  p-3 text-${
               props.mode
-            } bg-${props.mode === "light" ? "fadedgreen" : "fadedblue"}`}
+            } bg-${props.mode === "light" ? "lightgreen" : "fadedblue"}`}
           >
             <div className=" align-items-center pb-2 mb-1 link-dark text-decoration-none border-bottom border-dark">
               <div className="fs-4 text-center fw-semibold">Contents</div>
             </div>
             <ul className="list-unstyled ps-0">
               <li>
-                <a
-                  href="#Defination"
+                <Link
+                  to="#Defination"
                   className="link-dark mx-1 fw-bold rounded"
                 >
                   Defination
-                </a>
+                </Link>
                 <li>
-                  <a className="link-dark rounded" href="#immunity"></a>
+                  <Link className="link-dark rounded" to="#immunity"></Link>
                 </li>
               </li>
               <li className="mb-1">
                 <div className="d-inline">
-                  <a
+                  <Link
                     className="link-dark mx-1 fw-bold rounded"
-                    href="#immunity"
+                    to="#immunity"
                   >
                     Immunity
-                  </a>
+                  </Link>
                 </div>
                 <div
                   className="btn btn-toggle align-items-center rounded fw-bold d-inline collapsed"
@@ -70,80 +72,80 @@ export default function Immunology(props) {
                 <div className="collapse show" id="home-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li>
-                      <a href="#iii" className="link-dark fw-semibold rounded">
+                      <Link to="#iii" className="link-dark fw-semibold rounded">
                         Innate or inherent immunity
                         <ol>
                           <li>
-                            <a
+                            <Link
                               className="link-dark fw-semibold rounded"
-                              href="#abr"
+                              to="#abr"
                             >
                               Anatomical barriers
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               className="link-dark fw-semibold rounded"
-                              href="#pbr"
+                              to="#pbr"
                             >
                               Physiological barriers
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               className="link-dark fw-semibold rounded"
-                              href="#phbr"
+                              to="#phbr"
                             >
                               Phagocytic barrier
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               className="link-dark fw-semibold rounded"
-                              href="#ibr"
+                              to="#ibr"
                             >
                               Inflammatory barrier
-                            </a>
+                            </Link>
                           </li>
                         </ol>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="link-dark fw-semibold rounded" href="miir">
+                      <Link className="link-dark fw-semibold rounded" to="miir">
                         Mechanism of Innate Immune Recognition
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#aai" className="link-dark fw-semibold rounded">
+                      <Link to="#aai" className="link-dark fw-semibold rounded">
                         Acquired or adaptive immunity
                         <ol>
                           <li>
-                            <a
+                            <Link
                               className="link-dark fw-semibold rounded"
-                              href="#ai"
+                              to="#ai"
                             >
                               Active Immunity
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               className="link-dark fw-semibold rounded"
-                              href="#pi"
+                              to="#pi"
                             >
                               Passive Immunity
-                            </a>
+                            </Link>
                           </li>
                         </ol>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li className="mb-1">
                 <div className="d-inline">
-                  <a className="link-dark mx-1 fw-bold rounded" href="#cis">
+                  <Link className="link-dark mx-1 fw-bold rounded" to="/Immunocis">
                     Cells of Immune System
-                  </a>
+                  </Link>
                 </div>
                 <div
                   className="btn btn-toggle align-items-center rounded fw-bold d-inline collapsed"
@@ -169,63 +171,63 @@ export default function Immunology(props) {
                 <div className="collapse" id="cis-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li>
-                      <a href="#" className="link-dark fw-semibold rounded">
+                      <Link to="#" className="link-dark fw-semibold rounded">
                         Haematopoiesis
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded">
+                      <Link to="#" className="link-dark rounded">
                         Sites of Haematopoiesis
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded">
+                      <Link to="#" className="link-dark rounded">
                         Mechanism of Haematopoiesis
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded">
+                      <Link to="#" className="link-dark rounded">
                         <u>Cells of Immune System</u>
                         <ol>
                           <li>
-                            <a className="link-dark rounded" href="#lc">
+                            <Link className="link-dark rounded" to="#lc">
                               Lymphoid Cells
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a className="link-dark rounded" href="#mp">
+                            <Link className="link-dark rounded" to="#mp">
                               Mononuclear Phagocytes
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a className="link-dark rounded" href="#gc">
+                            <Link className="link-dark rounded" to="#gc">
                               Granulocytes
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a className="link-dark rounded" href="#mc">
+                            <Link className="link-dark rounded" to="#mc">
                               Mast Cells
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a className="link-dark rounded" href="#dc">
+                            <Link className="link-dark rounded" to="#dc">
                               Dendritic Cells
-                            </a>
+                            </Link>
                           </li>
                         </ol>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded"></a>
+                      <Link to="#" className="link-dark rounded"></Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li className="mb-1">
                 <div className="d-inline">
-                  <a className="link-dark mx-1 fw-bold rounded" href="#ois">
+                  <Link className="link-dark mx-1 fw-bold rounded" to="/Immunois">
                     Organs of Immune System
-                  </a>
+                  </Link>
                 </div>
                 <div
                   className="btn btn-toggle align-items-center rounded fw-bold d-inline collapsed"
@@ -250,20 +252,20 @@ export default function Immunology(props) {
                 </div>
                 <div className="collapse" id="ois-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a className="link-dark rounded" href="#">Primary Lymphoid Organs 
+                    <li><Link className="link-dark rounded" to="#">Primary Lymphoid Organs 
                     <ol>
-                      <li><a className="link-dark rounded" href="#">Thymus</a></li>
-                      <li><a className="link-dark rounded" href="#">Bone Marrow</a></li>
+                      <li><Link className="link-dark rounded" to="#">Thymus</Link></li>
+                      <li><Link className="link-dark rounded" to="#">Bone Marrow</Link></li>
                     </ol>
-                    <ul><li><a className="link-dark rounded" href="#">Lymphatic System</a></li></ul>
-                    </a></li>
-                    <li><a className="link-dark rounded" href="#">Secondary Lymphoid Organs 
+                    <ul><li><Link className="link-dark rounded" to="#">Lymphatic System</Link></li></ul>
+                    </Link></li>
+                    <li><Link className="link-dark rounded" to="#">Secondary Lymphoid Organs 
                     <ol>
-                      <li><a className="link-dark rounded" href="#">Lymph Nodes</a></li>
-                      <li><a className="link-dark rounded" href="#">Spleen</a></li>
-                      <li><a className="link-dark rounded" href="#">Mucosal-Associated Lymphoid Tissue </a></li>
+                      <li><Link className="link-dark rounded" to="#">Lymph Nodes</Link></li>
+                      <li><Link className="link-dark rounded" to="#">Spleen</Link></li>
+                      <li><Link className="link-dark rounded" to="#">Mucosal-Associated Lymphoid Tissue </Link></li>
                     </ol>
-                    </a></li>
+                    </Link></li>
                   </ul>
                 </div>
               </li>
@@ -271,9 +273,9 @@ export default function Immunology(props) {
 
               <li className="mb-1">
                 <div className="d-inline">
-                <a className="link-dark mx-1 fw-bold rounded" href="#antigen">
+                <Link className="link-dark mx-1 fw-bold rounded" to="/ImmunoAg">
                     Antigen
-                  </a>
+                  </Link>
                 </div>
                 <div
                   className="btn btn-toggle align-items-center rounded fw-bold d-inline collapsed"
@@ -298,25 +300,25 @@ export default function Immunology(props) {
                 </div>
                 <div className="collapse" id="antigen-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a className="link-dark rounded" href="#">Types of Antigen</a></li>
-                    <li><a className="link-dark rounded" href="#">Immunogenecity vs Antigenicity
+                    <li><Link className="link-dark rounded" to="#">Types of Antigen</Link></li>
+                    <li><Link className="link-dark rounded" to="#">Immunogenecity vs Antigenicity
                     <ol>
-                      <li><a href="#"className="link-dark rounded">Contribution of the Immunogen</a></li>
-                      <li><a href="#"className="link-dark rounded">Contribution of the Biological System </a></li>
+                      <li><Link to="#"className="link-dark rounded">Contribution of the Immunogen</Link></li>
+                      <li><Link to="#"className="link-dark rounded">Contribution of the Biological System </Link></li>
                     </ol>
-                    </a></li>
-                    <li><a className="link-dark rounded" href="#">Epitopes</a></li>
-                    <li><a className="link-dark rounded" href="#">Hapten</a></li>
+                    </Link></li>
+                    <li><Link className="link-dark rounded" to="#">Epitopes</Link></li>
+                    <li><Link className="link-dark rounded" to="#">Hapten</Link></li>
                   </ul>
                 </div>
 
               </li>
 
               <li className="mb-1">
-                <div className="d-inline">
-                <a className="link-dark mx-1 fw-bold rounded" href="#antibody">
+              <div className="d-inline">
+                <Link className="link-dark mx-1 fw-bold rounded" to="/ImmunoAg">
                     Antibody
-                  </a>
+                  </Link>
                 </div>
                 <div
                   className="btn btn-toggle align-items-center rounded fw-bold d-inline collapsed"
@@ -341,14 +343,177 @@ export default function Immunology(props) {
                 </div>
                 <div className="collapse" id="antibody-collapse">
                 <ul type="square"  className="btn-toggle-nav  fw-normal pb-1 small">
-                    <li><a className="link-dark rounded" href="#sa">Structure of Antibody</a></li>
-                    <li><a className="link-dark rounded" href="#igd">Immunoglobulin Domains</a></li>
-                    <li><a className="link-dark rounded" href="#tab">Types of Antibodies</a></li>
-                    <li><a className="link-dark rounded" href="#adi">Antigenic Determinants on Immunoglobulins</a></li>
+                    <li><Link className="link-dark rounded" to="#sa">Structure of Antibody</Link></li>
+                    <li><Link className="link-dark rounded" to="#igd">Immunoglobulin Domains</Link></li>
+                    <li><Link className="link-dark rounded" to="#tab">Types of Antibodies</Link></li>
+                    <li><Link className="link-dark rounded" to="#adi">Antigenic Determinants on Immunoglobulins</Link></li>
+                    <li><Link className="link-dark rounded" to="#adi">Monoclonal Antibodies</Link></li>
                   </ul>
                 </div>
                   
                 
+              </li>
+              <li className="mb-1">
+                <div className="d-inline">
+                <Link className="link-dark mx-1 fw-bold rounded" to="ImmunoAb">
+                    Diversity of Immunoglobulins
+                  </Link>
+                </div>
+                <div
+                  className="btn btn-toggle align-items-center rounded fw-bold d-inline collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#diversityofimmunoglobulins-collapse"
+                  aria-expanded="true"
+                >
+                  <i class="bi bi-chevron-compact-down"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-compact-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+                    />
+                  </svg>
+                </div>
+                <div className="collapse" id="diversityofimmunoglobulins-collapse">
+                <ul type="square"  className="btn-toggle-nav  fw-normal pb-1 small">
+                    <li><Link className="link-dark rounded" to="#sa">Diversity of Ig genes</Link></li>
+                    <li><Link className="link-dark rounded" to="#igd">Varriable gene Rearrangement</Link></li>
+                    <li><Link className="link-dark rounded" to="#tab">Types of Antibodies</Link></li>
+                    <li><Link className="link-dark rounded" to="#adi">Mechanism</Link></li>
+                    <li><Link className="link-dark rounded" to="#adi">Generation of Antibody Diversity</Link></li>
+                  </ul>
+                </div>
+                  
+                
+              </li>
+
+              <li className="mb-1">
+                <div className="d-inline">
+                <Link className="link-dark mx-1 fw-bold rounded" to="ImmunoAb">
+                    ELISA
+                  </Link>
+                </div>
+              </li>
+
+
+              <li className="mb-1">
+                <div className="d-inline">
+                <Link className="link-dark mx-1 fw-bold rounded" to="ImmunoAb">
+                    Major Histocompatibility Complex (MHC)
+                  </Link>
+                </div>
+                <div
+                  className="btn btn-toggle align-items-center rounded fw-bold d-inline collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mhc-collapse"
+                  aria-expanded="true"
+                >
+                  <i class="bi bi-chevron-compact-down"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-compact-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+                    />
+                  </svg>
+                </div>
+                <div className="collapse" id="mhc-collapse">
+                <ul type="square"  className="btn-toggle-nav  fw-normal pb-1 small">
+                    <li><Link className="link-dark rounded" to="#sa">Structure of MHC</Link></li>
+                    <li><Link className="link-dark rounded" to="#igd">Function of MHC</Link></li>
+                  </ul>
+                </div>
+                
+              </li>
+              <li className="mb-1">
+                <div className="d-inline">
+                <Link className="link-dark mx-1 fw-bold rounded" to="ImmunoAb">
+                   T-Cells
+                  </Link>
+                </div>
+                <div
+                  className="btn btn-toggle align-items-center rounded fw-bold d-inline collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#tcells-collapse"
+                  aria-expanded="true"
+                >
+                  <i class="bi bi-chevron-compact-down"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-compact-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+                    />
+                  </svg>
+                </div>
+                <div className="collapse" id="tcells-collapse">
+                <ul type="square"  className="btn-toggle-nav  fw-normal pb-1 small">
+                    <li><Link className="link-dark rounded" to="#sa">Maturation</Link></li>
+                    <li><Link className="link-dark rounded" to="#sa">Activation</Link></li>
+                    <li><Link className="link-dark rounded" to="#igd">Activation</Link></li>
+                  </ul>
+                </div>
+                
+              </li>
+              <li className="mb-1">
+                <div className="d-inline">
+                <Link className="link-dark mx-1 fw-bold rounded" to="ImmunoAb">
+                   B-Cells
+                  </Link>
+                </div>
+                <div
+                  className="btn btn-toggle align-items-center rounded fw-bold d-inline collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#bcells-collapse"
+                  aria-expanded="true"
+                >
+                  <i class="bi bi-chevron-compact-down"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-compact-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+                    />
+                  </svg>
+                </div>
+                <div className="collapse" id="bcells-collapse">
+                <ul type="square"  className="btn-toggle-nav  fw-normal pb-1 small">
+                    <li><Link className="link-dark rounded" to="#sa">Maturation</Link></li>
+                    <li><Link className="link-dark rounded" to="#sa">Activation and Differentiation</Link></li>
+                  </ul>
+                </div>
+                
+              </li>
+              <li className="mb-1">
+                <div className="d-inline">
+                <Link className="link-dark mx-1 fw-bold rounded" to="ImmunoAb">
+                  Hypersensitivity`
+                  </Link>
+                </div>
               </li>
 
               <li className="border-top my-3"></li>
@@ -364,24 +529,24 @@ export default function Immunology(props) {
                 <div className="collapse" id="account-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li>
-                      <a href="#" className="link-dark rounded">
+                      <Link to="#" className="link-dark rounded">
                         New...
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded">
+                      <Link to="#" className="link-dark rounded">
                         Profile
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded">
+                      <Link to="#" className="link-dark rounded">
                         Settings
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded">
+                      <Link to="#" className="link-dark rounded">
                         Sign out
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -441,10 +606,10 @@ export default function Immunology(props) {
           </div>
           <ol>
             <li>
-              <a href="#iii">Innate or inherent immunity</a>
+              <Link to="#iii">Innate or inherent immunity</Link>
             </li>
             <li>
-              <a href="#aai">Acquired or adaptive immunity</a>
+              <Link to="#aai">Acquired or adaptive immunity</Link>
             </li>
           </ol>
           <h4 className="text-center ">
@@ -478,16 +643,16 @@ export default function Immunology(props) {
           </h6>
           <ol>
             <li>
-              <a href="#abr">Anatomical barriers</a>
+              <Link to="#abr">Anatomical barriers</Link>
             </li>
             <li>
-              <a href="#pbr"> Physiological barriers</a>
+              <Link to="#pbr"> Physiological barriers</Link>
             </li>
             <li>
-              <a href="#phbr">Phagocytic barrier</a>
+              <Link to="#phbr">Phagocytic barrier</Link>
             </li>
             <li>
-              <a href="#">Inflammatory barrier</a>
+              <Link to="#">Inflammatory barrier</Link>
             </li>
           </ol>
           <h4 id="abr">Anatomical barriers</h4>
