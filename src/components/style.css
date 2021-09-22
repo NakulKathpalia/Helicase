@@ -11,14 +11,17 @@
 .bg-fadedgreen {
   background-color: #08253d;
 }
+.bg-crd{
+  background-color: #0A0B1D;
+}
 .bg-darkblue {
   background-color: #d1d6ce;
 }
 .bg-fadedblue {
   background-color: #8cd7ed;
 }
-.bg-lightgreen{
-  background-color: #BBEDC9;
+.bg-lightgreen {
+  background-color: #bbedc9;
 }
 
 .abt {
@@ -183,12 +186,9 @@ h3 {
   width: 100%;
   border-radius: 15px;
 }
-.crdbdr {
-  border-radius: 20px;
-  margin: 2%;
-}
+
 .crdbdrimg {
-  border-radius: 21px;
+  
   padding: 4px;
 }
 @media only screen and (max-width: 992px) {

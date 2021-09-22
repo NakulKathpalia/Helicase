@@ -35,7 +35,6 @@ export default function Biotechnology(props) {
             className={`text-center text-${
               props.mode === "light" ? "success" : "warning"
             }`}
-            className="text-center"
           >
             Introduction to biotechnology
           </h3>
@@ -44,11 +43,11 @@ export default function Biotechnology(props) {
             <a href="#hni"> History and introduction</a>
           </li>
           <li>
-            <a href="#">Traditional and modern biotechnology</a>
+            <a href="#tmb">Traditional and modern biotechnology</a>
           </li>
 
           <li className="dropend">
-            <a href="#">Overview of branches of biotechnology</a>
+            <a href="#obb">Overview of branches of biotechnology</a>
             <button
               className="button dropdown-toggle"
               type="button"
@@ -62,42 +61,42 @@ export default function Biotechnology(props) {
               aria-labelledby="dropdownMenuLink"
             >
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#plant-biotech">
                   Plant biotechnology
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#animal-biotech">
                   Animal biotechnology
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#environmental-biotech">
                   Environmental biotechnology
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#agriculture-biotech">
                   Agricultural biotechnology
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#marine-biotech">
                   Marine biotechnology
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#healthcare-biotech">
                   Healthcare biotechnology
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#induatrial-biotech">
                   Industrial biotechnology
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#pharmaceutical-biotech">
                   Pharmaceutical biotechnology
                 </a>
               </li>
@@ -151,7 +150,6 @@ export default function Biotechnology(props) {
               className={`text-center text-${
                 props.mode === "light" ? "success" : "warning"
               }`}
-              className="text-center"
             >
               Introduction:-
             </h3>
@@ -174,10 +172,9 @@ export default function Biotechnology(props) {
               <a href="#bluebt">Blue biotechnology</a>
             </li>
             <h3
-              className={`text-center text-${
+              className={`text-center fw-bold text-${
                 props.mode === "light" ? "success" : "warning"
               }`}
-              className="text-center fw-bold"
               id="greenbt"
             >
               Green Biotechnology
@@ -214,10 +211,9 @@ export default function Biotechnology(props) {
               </li>
             </p>
             <h3
-              className={`text-center text-${
+              className={`text-center fw-bold text-${
                 props.mode === "light" ? "success" : "warning"
               }`}
-              className="text-center fw-bold"
               id="redbt"
             >
               Red Biotechnology
@@ -244,10 +240,9 @@ export default function Biotechnology(props) {
               </li>
             </p>
             <h3
-              className={`text-center text-${
+              className={`text-center fw-bold text-${
                 props.mode === "light" ? "success" : "warning"
               }`}
-              className="text-center fw-bold"
               id="whitebt"
             >
               White Biotechnology

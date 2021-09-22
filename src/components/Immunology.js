@@ -54,17 +54,17 @@ export default function Immunology(props) {
                   data-bs-target="#home-collapse"
                   aria-expanded="true"
                 >
-                  <i class="bi bi-chevron-compact-down"></i>
+                  <i className="bi bi-chevron-compact-down"></i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-chevron-compact-down"
+                    className="bi bi-chevron-compact-down"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
                     />
                   </svg>
@@ -153,17 +153,17 @@ export default function Immunology(props) {
                   data-bs-target="#cis-collapse"
                   aria-expanded="true"
                 >
-                  <i class="bi bi-chevron-compact-down"></i>
+                  <i className="bi bi-chevron-compact-down"></i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-chevron-compact-down"
+                    className="bi bi-chevron-compact-down"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
                     />
                   </svg>
@@ -235,17 +235,17 @@ export default function Immunology(props) {
                   data-bs-target="#ois-collapse"
                   aria-expanded="true"
                 >
-                  <i class="bi bi-chevron-compact-down"></i>
+                  <i className="bi bi-chevron-compact-down"></i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-chevron-compact-down"
+                    className="bi bi-chevron-compact-down"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
                     />
                   </svg>
@@ -283,17 +283,17 @@ export default function Immunology(props) {
                   data-bs-target="#antigen-collapse"
                   aria-expanded="true"
                 >
-                  <i class="bi bi-chevron-compact-down"></i>
+                  <i className="bi bi-chevron-compact-down"></i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-chevron-compact-down"
+                    className="bi bi-chevron-compact-down"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
                     />
                   </svg>
@@ -326,17 +326,17 @@ export default function Immunology(props) {
                   data-bs-target="#antibody-collapse"
                   aria-expanded="true"
                 >
-                  <i class="bi bi-chevron-compact-down"></i>
+                  <i className="bi bi-chevron-compact-down"></i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-chevron-compact-down"
+                    className="bi bi-chevron-compact-down"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
                     />
                   </svg>
@@ -365,17 +365,17 @@ export default function Immunology(props) {
                   data-bs-target="#diversityofimmunoglobulins-collapse"
                   aria-expanded="true"
                 >
-                  <i class="bi bi-chevron-compact-down"></i>
+                  <i className="bi bi-chevron-compact-down"></i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-chevron-compact-down"
+                    className="bi bi-chevron-compact-down"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
                     />
                   </svg>
@@ -414,17 +414,17 @@ export default function Immunology(props) {
                   data-bs-target="#mhc-collapse"
                   aria-expanded="true"
                 >
-                  <i class="bi bi-chevron-compact-down"></i>
+                  <i className="bi bi-chevron-compact-down"></i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-chevron-compact-down"
+                    className="bi bi-chevron-compact-down"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
                     />
                   </svg>
@@ -449,17 +449,17 @@ export default function Immunology(props) {
                   data-bs-target="#tcells-collapse"
                   aria-expanded="true"
                 >
-                  <i class="bi bi-chevron-compact-down"></i>
+                  <i className="bi bi-chevron-compact-down"></i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-chevron-compact-down"
+                    className="bi bi-chevron-compact-down"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
                     />
                   </svg>
@@ -485,17 +485,17 @@ export default function Immunology(props) {
                   data-bs-target="#bcells-collapse"
                   aria-expanded="true"
                 >
-                  <i class="bi bi-chevron-compact-down"></i>
+                  <i className="bi bi-chevron-compact-down"></i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-chevron-compact-down"
+                    className="bi bi-chevron-compact-down"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
                     />
                   </svg>

@@ -53,7 +53,7 @@ export default function TextForm(props) {
           <div className="col ">
             <div
               className={`card crdbdr bg-${
-                props.mode === "light" ? "success" : "light"
+                props.mode === "light" ? "dark" : "light"
               }`}
             >
               <img
@@ -63,7 +63,7 @@ export default function TextForm(props) {
               />
               <div className={`card-body `}>
                 <h5 className={`card-title text-${props.mode}`}>
-                  Biotechnology
+                  <u>Biotechnology</u>
                 </h5>
                 <p className={`card-text  text-${props.mode}`}>
                   Biotechnology is technology that utilizes biological systems,
@@ -87,7 +87,7 @@ export default function TextForm(props) {
           <div className="col">
             <div
               className={`card crdbdr bg-${
-                props.mode === "light" ? "primary" : "light"
+                props.mode === "light" ? "dark" : "light"
               }`}
             >
               <img
@@ -96,7 +96,7 @@ export default function TextForm(props) {
                 alt="..."
               />
               <div className="card-body">
-                <h5 className={`card-title text-${props.mode}`}>Immunology</h5>
+                <h5 className={`card-title text-${props.mode}`}> <u>Immunology</u> </h5>
                 <p className={`card-text  text-${props.mode}`}>
                   Immunology is the study of the immune system and is a very
                   important branch of the medical and biological sciences. The
@@ -120,8 +120,8 @@ export default function TextForm(props) {
           </div>
           <div className="col">
             <div
-              className={`card crdbdr bg-${
-                props.mode === "light" ? "danger" : "light"
+              className={`card  bg-${
+                props.mode === "light" ? "dark" : "light"
               }`}
             >
               <img
@@ -131,7 +131,7 @@ export default function TextForm(props) {
               />
               <div className="card-body">
                 <h5 className={`card-title text-${props.mode}`}>
-                  Microbiology
+                  <u>Microbiology</u>
                 </h5>
                 <p className={`card-text  text-${props.mode}`}>
                   Microbiology is the study of all living organisms that are too
