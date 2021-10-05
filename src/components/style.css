@@ -11,8 +11,8 @@
 .bg-fadedgreen {
   background-color: #08253d;
 }
-.bg-crd{
-  background-color: #0A0B1D;
+.bg-crd {
+  background-color: #0a0b1d;
 }
 .bg-darkblue {
   background-color: #d1d6ce;
@@ -51,20 +51,34 @@
   border-radius: 26px;
 }
 .firstsection {
-  margin: 2%;
+  margin: 4%;
   border-radius: 15px;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 80vh;
 }
 .bg-l {
-  background-image: url(./img/banner_helicase_03.jpg);
+  background-image: url(./img/banner_helicase_04.jpg);
+  transition: 500ms ease-in-out;
+}
+.bg-l:hover{
+  transform: scale(1.02);
+  box-shadow: 0 0 10px 0.1px yellowgreen;
+
+}
+.bg-d:hover{
+  transform: scale(1.02);
+  box-shadow: 0 0 10px 0.1px rgb(28, 25, 209);
+
 }
 .bg-d {
-  background-image: url(./img/banner_helicase_02.jpg);
+  background-image: url(./img/banner_helicase_04.jpg);
+  transition: 500ms ease-in-out;
+
 }
+
 .paras {
-  margin: 2%;
+  margin: 4%;
   padding: 12% 0;
   border-radius: 15px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -186,11 +200,62 @@ h3 {
   width: 100%;
   border-radius: 15px;
 }
-
-.crdbdrimg {
-  
-  padding: 4px;
+/* ############################################################################################### */
+.crd {
+  background-size: cover;
+  max-width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 500ms ease;
+  transform-origin: top;
 }
+.crd:hover {
+  transform: scale(1.05);
+}
+.crd-img {
+  border-radius: 9px;
+  width: 100%;
+}
+.card-content {
+  --padding: 1.5rem;
+  padding: 15px;
+  max-height: 280px;
+  transition: 500ms ease-in-out;
+  transition-delay: 500ms;
+}
+.card-content > *:not(.crd-img, .card-title) {
+  opacity: 0;
+  transition: 500ms ease;
+}
+.crd:hover .card-content > * {
+  opacity: 1;
+}
+.crd:hover .card-content {
+  max-height: 550px;
+}
+.card-title {
+  position: relative;
+  width: max-content;
+  padding: 10px 0 10px 0;
+}
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: calc(var(--padding) * -1);
+  bottom: 0%;
+  width: calc(100% + var(--padding));
+  background: greenyellow;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 500ms ease;
+}
+.crd:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+/* ########################################################################################## */
+
 @media only screen and (max-width: 992px) {
   .mainbox {
     flex-direction: column;

@@ -9,30 +9,18 @@ export default function TextForm(props) {
       <br />
       <div className={`text-${props.mode === "light" ? "dark" : "light"}`}>
         <div
-          className={`firstsection my-5 bg-${props.mode === "light" ? "d" : "l"}`}
-        >
-          {/* <div className="frontpanel text-center">
-            <h6
-              className={`mainheading pt-5 text-uppercase fw-bold display-1 text-${props.mode}`}
-              style={{
-                fontFamily: "cursive",
-              }}
-            >
-              Helicase
-            </h6>
-            <h5 className={`blockquote-footer text-${props.mode}`}>
-              "Unwind your Searches ,Binds your studies"
-            </h5>
-          </div> */}
-        </div>
+          className={`firstsection my-5 bg-${
+            props.mode === "light" ? "d" : "l"
+          }`}
+        ></div>
 
         <div
-          className="text-center mx-4 my-5 paras "
+          className="text-center paras "
           style={{
             fontFamily: "Arial, Helvetica, sans-serif",
-          }}
+          }} id="about"
         >
-          <p className="text-center text-light abt">
+          <p className={`text-center text-light abt`}>
             In colleges, students faces lots of challenges when it comes to find
             or study certain subjects or topics in details. We, at Helicase
             provide those very details about the subjects. We provide notes of
@@ -51,53 +39,28 @@ export default function TextForm(props) {
       <div className="mx-5 my-5 ">
         <div className="row row-cols-1 row-cols-md-3 g-4">
           <div className="col ">
-            <div
-              className={`card crdbdr bg-${
-                props.mode === "light" ? "dark" : "light"
-              }`}
-            >
-              <img
-                src="biotechnology.jpg"
-                className="card-img-top crdbdrimg"
-                alt="..."
-              />
-              <div className={`card-body `}>
-                <h5 className={`card-title text-${props.mode}`}>
-                  <u>Biotechnology</u>
-                </h5>
-                <p className={`card-text  text-${props.mode}`}>
+            <div className={`crd bg-${props.mode === "light" ? "dark" : "light"} text-${props.mode}`}>
+              <div className="card-content">
+                <img className="crd-img" src="biotechnology.jpg" alt="" />
+                <h2 className="card-title">Biotechnology</h2>
+                <p className="card-body">
                   Biotechnology is technology that utilizes biological systems,
                   living organisms or parts of this to develop or create
                   different products. Brewing and baking bread are examples of
                   processes that fall within the concept of biotechnology
                 </p>
-                <button className={`btn btn-${props.mode} `}>
-                  <Link
-                    className={`text-decoration-none text-${
-                      props.mode === "light" ? "dark" : "light"
-                    }`}
-                    to="/Biotechnology"
-                  >
-                    Learn More
-                  </Link>
-                </button>
+                <a type="button" href="/Biotechnology" className="btn btn-success">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
-          <div className="col">
-            <div
-              className={`card crdbdr bg-${
-                props.mode === "light" ? "dark" : "light"
-              }`}
-            >
-              <img
-                src="immuno.jpg"
-                className="card-img-top crdbdrimg"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className={`card-title text-${props.mode}`}> <u>Immunology</u> </h5>
-                <p className={`card-text  text-${props.mode}`}>
+          <div className="col ">
+            <div className={`crd bg-${props.mode === "light" ? "dark" : "light"} text-${props.mode}`}>
+              <div className="card-content">
+                <img className="crd-img" src="Immuno.jpg" alt="" />
+                <h2 className="card-title">Immunology</h2>
+                <p className="card-body">
                   Immunology is the study of the immune system and is a very
                   important branch of the medical and biological sciences. The
                   immune system protects us from infection through various lines
@@ -105,54 +68,31 @@ export default function TextForm(props) {
                   should, it can result in disease, such as autoimmunity,
                   allergy and cancer.
                 </p>
-                <button className={`btn btn-${props.mode} `}>
-                  <Link
-                    className={`text-decoration-none text-${
-                      props.mode === "light" ? "dark" : "light"
-                    }`}
-                    to="/Immunology"
-                  >
-                    Learn More
-                  </Link>
-                </button>
+                <a type="button" href="/Immunology" className="btn btn-success">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
-          <div className="col">
-            <div
-              className={`card  bg-${
-                props.mode === "light" ? "dark" : "light"
-              }`}
-            >
-              <img
-                src="microbiology.jpg"
-                className="card-img-top crdbdrimg"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className={`card-title text-${props.mode}`}>
-                  <u>Microbiology</u>
-                </h5>
-                <p className={`card-text  text-${props.mode}`}>
+          <div className="col ">
+            <div className={`crd bg-${props.mode === "light" ? "dark" : "light"} text-${props.mode}`}>
+              <div className="card-content">
+                <img className="crd-img" src="Microbiology.jpg" alt="" />
+                <h2 className="card-title">Microbiology</h2>
+                <p className="card-body">
                   Microbiology is the study of all living organisms that are too
                   small to be visible with the naked eye. This includes
                   bacteria, archaea, viruses, fungi, prions, protozoa and algae,
                   collectively known as 'microbes'.
                 </p>
-                <button className={`btn btn-${props.mode} `}>
-                  <Link
-                    className={`text-decoration-none text-${
-                      props.mode === "light" ? "dark" : "light"
-                    }`}
-                    to="/Microbiology"
-                  >
-                    Learn More
-                  </Link>
-                </button>
+                <a type="button" href="/Microbiology" className="btn btn-success">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
-          <div className="col">
+       
+          {/* <div className="col">
             <div
               className={`card crdbdr bg-${
                 props.mode === "light" ? "info" : "light"
@@ -217,7 +157,7 @@ export default function TextForm(props) {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
