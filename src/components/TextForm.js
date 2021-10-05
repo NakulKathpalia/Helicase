@@ -39,10 +39,10 @@ export default function TextForm(props) {
       <div className="mx-5 my-5 ">
         <div className="row row-cols-1 row-cols-md-3 g-4">
           <div className="col ">
-            <div className={`crd bg-${props.mode === "light" ? "dark" : "light"} text-${props.mode}`}>
+            <div className={`crd ${props.mode === "light" ? "crd-bg-l" : "crd-bg-d"} text-${props.mode}`}>
               <div className="card-content">
-                <img className="crd-img" src="biotechnology.jpg" alt="" />
                 <h2 className="card-title">Biotechnology</h2>
+                <img className="crd-img" src="biotechnology.jpg" alt="" />
                 <p className="card-body">
                   Biotechnology is technology that utilizes biological systems,
                   living organisms or parts of this to develop or create
@@ -56,7 +56,7 @@ export default function TextForm(props) {
             </div>
           </div>
           <div className="col ">
-            <div className={`crd bg-${props.mode === "light" ? "dark" : "light"} text-${props.mode}`}>
+            <div className={`crd ${props.mode === "light" ? "crd-bg-l" : "crd-bg-d"} text-${props.mode}`}>
               <div className="card-content">
                 <img className="crd-img" src="Immuno.jpg" alt="" />
                 <h2 className="card-title">Immunology</h2>
@@ -75,7 +75,7 @@ export default function TextForm(props) {
             </div>
           </div>
           <div className="col ">
-            <div className={`crd bg-${props.mode === "light" ? "dark" : "light"} text-${props.mode}`}>
+            <div className={`crd ${props.mode === "light" ? "crd-bg-l" : "crd-bg-d"} text-${props.mode}`}>
               <div className="card-content">
                 <img className="crd-img" src="Microbiology.jpg" alt="" />
                 <h2 className="card-title">Microbiology</h2>
