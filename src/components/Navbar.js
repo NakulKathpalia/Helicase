@@ -50,6 +50,7 @@ export default function Navbar(props) {
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
+                  aria-haspopup="true"
                   aria-expanded="false"
                 >
                   Discover more
